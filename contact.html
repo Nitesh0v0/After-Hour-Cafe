@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — After Hours Cafe</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><svg class="logo-icon" viewBox="0 0 36 36" fill="none"><path d="M8 28 C8 28 10 14 18 14 C26 14 28 28 28 28Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M28 20 C31 20 33 22 33 24 C33 26 31 27 28 27" stroke="currentColor" stroke-width="1.5" fill="none"/><ellipse cx="18" cy="28.5" rx="10" ry="1.5" stroke="currentColor" stroke-width="1" fill="none"/></svg><span class="logo-text">After Hours<em>.</em></span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="order.html" class="nav-cta">Order Online →</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <a href="order.html" class="btn btn-primary">Order Now</a>
+  </div>
+
+  <section class="page-hero">
+    <p class="page-hero-badge">📍 Bhairahawa, Nepal</p>
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you. Come by, call, or drop us a message.</p>
+  </section>
+
+  <div class="contact-layout">
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>Find us in<br/><em>Bhairahawa.</em></h2>
+      <div class="info-block">
+        <span class="info-icon">📍</span>
+        <div><strong>Address</strong><p>Siddartha Highway, Near Butwal Bus Park<br/>Bhairahawa (Siddharthanagar)<br/>Rupandehi 32900, Nepal</p></div>
+      </div>
+      <div class="info-block">
+        <span class="info-icon">📞</span>
+        <div><strong>Phone</strong><p>+977-71-XXXXXX<br/>+977-98XXXXXXXX</p></div>
+      </div>
+      <div class="info-block">
+        <span class="info-icon">📧</span>
+        <div><strong>Email</strong><p>hello@afterhourscafe.np<br/>orders@afterhourscafe.np</p></div>
+      </div>
+      <div class="info-block">
+        <span class="info-icon">🕐</span>
+        <div><strong>Opening Hours</strong><p>Mon – Fri: 6:00 AM – 12:00 AM<br/>Sat – Sun: 7:00 AM – 1:00 AM</p></div>
+      </div>
+      <div class="social-btns">
+        <a href="#" class="social-btn">Facebook</a>
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">TikTok</a>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form-wrap">
+      <h2>Send a<br/><em>Message.</em></h2>
+      <form id="contactForm">
+        <div class="form-group"><label>Your Name *</label><input type="text" id="cName" placeholder="Full name" required/></div>
+        <div class="form-group"><label>Email Address *</label><input type="email" id="cEmail" placeholder="your@email.com" required/></div>
+        <div class="form-group"><label>Subject</label>
+          <select id="cSubject">
+            <option value="general">General Inquiry</option>
+            <option value="order">Order Issue</option>
+            <option value="feedback">Feedback</option>
+            <option value="event">Event / Reservation</option>
+            <option value="partnership">Business Partnership</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message *</label><textarea id="cMessage" rows="5" placeholder="Write your message here..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        <p class="form-success" id="formSuccess" style="display:none;">✓ Message sent! We'll reply within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="map-wrap">
+    <h2>Find Us on the Map</h2>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.0!2d83.4487!3d27.5040!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBhairahawa%2C+Nepal!5e0!3m2!1sen!2snp!4v1" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo"><svg class="logo-icon" viewBox="0 0 36 36" fill="none"><path d="M8 28 C8 28 10 14 18 14 C26 14 28 28 28 28Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M28 20 C31 20 33 22 33 24 C33 26 31 27 28 27" stroke="currentColor" stroke-width="1.5" fill="none"/><ellipse cx="18" cy="28.5" rx="10" ry="1.5" stroke="currentColor" stroke-width="1" fill="none"/></svg>After Hours<em>.</em></a>
+        <p>Bhairahawa's favourite late-night coffee destination.</p>
+        <div class="footer-socials"><a href="#" class="social-link">Facebook</a><a href="#" class="social-link">Instagram</a><a href="#" class="social-link">TikTok</a></div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Visit</h4><address>Siddartha Highway<br/>Bhairahawa, Rupandehi<br/>Nepal 32900</address><p class="footer-contact">📞 +977-71-XXXXXX</p></div>
+        <div class="footer-col"><h4>Hours</h4><p>Mon–Fri<br/><strong>6:00 AM – 12:00 AM</strong></p><p>Sat–Sun<br/><strong>7:00 AM – 1:00 AM</strong></p></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 After Hours Cafe, Bhairahawa, Nepal.</p></div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav?.classList.toggle('scrolled', window.scrollY > 40));
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav  = document.getElementById('mobileNav');
+    hamburger?.addEventListener('click', () => mobileNav.classList.toggle('open'));
+
+    document.getElementById('contactForm')?.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('cName').value.trim();
+      const email = document.getElementById('cEmail').value.trim();
+      const msg   = document.getElementById('cMessage').value.trim();
+      if (!name || !email || !msg) return;
+      const s = document.getElementById('formSuccess');
+      s.style.display = 'block';
+      e.target.reset();
+      setTimeout(() => { s.style.display = 'none'; }, 5000);
+    });
+  </script>
+</body>
+</html>

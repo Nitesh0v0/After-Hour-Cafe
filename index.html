@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After Hours Cafe — Bhairahawa, Nepal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======== NAV ======== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 28 C8 28 10 14 18 14 C26 14 28 28 28 28Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M28 20 C31 20 33 22 33 24 C33 26 31 27 28 27" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M12 14 C12 11 15 9 18 9 C21 9 24 11 24 14" stroke="currentColor" stroke-width="1" fill="none" stroke-dasharray="2 2"/>
+          <ellipse cx="18" cy="28.5" rx="10" ry="1.5" stroke="currentColor" stroke-width="1" fill="none"/>
+        </svg>
+        <span class="logo-text">After Hours<em>.</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="order.html" class="nav-cta">Order Online →</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="order.html" class="btn btn-primary">Order Now</a>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <div class="hero-bg-art">
+      <!-- Animated coffee steam SVG -->
+      <svg class="steam-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+        <path class="steam s1" d="M200 400 C200 380 215 370 200 350 C185 330 200 310 200 290" stroke="#e8a23a" stroke-width="2" fill="none" opacity="0.3"/>
+        <path class="steam s2" d="M170 420 C170 400 185 390 170 370 C155 350 170 330 170 310" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.2"/>
+        <path class="steam s3" d="M230 415 C230 395 245 385 230 365 C215 345 230 325 230 305" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.2"/>
+      </svg>
+      <!-- Large decorative coffee ring -->
+      <div class="hero-ring hero-ring-1"></div>
+      <div class="hero-ring hero-ring-2"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-layout">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open Now · Bhairahawa, Nepal
+        </div>
+        <h1 class="hero-title">
+          Coffee that keeps<br/>
+          <em>the night alive.</em>
+        </h1>
+        <p class="hero-desc">
+          Specialty brews, artisan bakes & warm ambiance — at the heart of Bhairahawa since 2019. From the first espresso at dawn to the last cold brew past midnight.
+        </p>
+        <div class="hero-actions">
+          <a href="order.html" class="btn btn-primary">Order Online</a>
+          <a href="menu.html" class="btn btn-ghost">View Full Menu ↓</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>500+</strong>
+            <span>5-star reviews</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>Open</strong>
+            <span>6am – Midnight</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>Free</strong>
+            <span>Delivery Rs.500+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-visual">
+          <!-- SVG Coffee Cup Illustration -->
+          <svg class="cup-illustration" viewBox="0 0 340 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Saucer -->
+            <ellipse cx="170" cy="340" rx="110" ry="18" fill="#2a1f12" stroke="#e8a23a" stroke-width="1"/>
+            <ellipse cx="170" cy="335" rx="90" ry="12" fill="#1f1810"/>
+            <!-- Cup body -->
+            <path d="M90 240 L110 330 L230 330 L250 240 Z" fill="#2a1f12" stroke="#e8a23a" stroke-width="1.5"/>
+            <!-- Cup handle -->
+            <path d="M250 262 C280 262 295 275 295 290 C295 305 280 315 250 315" stroke="#e8a23a" stroke-width="2" fill="none"/>
+            <!-- Coffee surface -->
+            <ellipse cx="170" cy="240" rx="80" ry="22" fill="#3d2910"/>
+            <ellipse cx="170" cy="240" rx="80" ry="22" fill="url(#coffeeGrad)" opacity="0.7"/>
+            <!-- Latte art -->
+            <path d="M140 235 C155 225 185 225 200 235 C185 245 155 245 140 235Z" fill="#c47c2a" opacity="0.5"/>
+            <path d="M158 233 C165 228 175 228 182 233" stroke="#d4882e" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="170" cy="236" r="4" fill="#b8721f" opacity="0.4"/>
+            <!-- Cup highlight -->
+            <path d="M110 265 C120 258 140 255 155 258" stroke="#e8a23a" stroke-width="1" opacity="0.3"/>
+            <!-- Steam -->
+            <path class="cup-steam s1" d="M150 215 C150 200 160 192 150 178 C140 164 150 150 150 136" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <path class="cup-steam s2" d="M170 210 C170 195 180 187 170 173 C160 159 170 145 170 131" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.35"/>
+            <path class="cup-steam s3" d="M190 215 C190 200 200 192 190 178 C180 164 190 150 190 136" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.3"/>
+            <defs>
+              <radialGradient id="coffeeGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#c47c2a"/>
+                <stop offset="100%" stop-color="#3d2910"/>
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <!-- Floating info cards -->
+          <div class="float-card float-card-1">
+            <span class="float-icon">⭐</span>
+            <div>
+              <strong>4.9 / 5.0</strong>
+              <small>Google Rating</small>
+            </div>
+          </div>
+          <div class="float-card float-card-2">
+            <span class="float-icon">🛵</span>
+            <div>
+              <strong>25–35 min</strong>
+              <small>Avg. Delivery</small>
+            </div>
+          </div>
+          <div class="float-card float-card-3">
+            <span class="float-icon">🌙</span>
+            <div>
+              <strong>Open Late</strong>
+              <small>Till Midnight</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ======== ANNOUNCEMENT STRIP ======== -->
+  <div class="announce-strip">
+    <div class="announce-inner">
+      <span>☕ NEW: Himalayan Cold Brew — now available</span>
+      <span class="sep">·</span>
+      <span>🛵 Free delivery on orders above Rs. 500</span>
+      <span class="sep">·</span>
+      <span>🎉 Open every day — 6 AM to 12 AM</span>
+      <span class="sep">·</span>
+      <span>📍 Siddartha Highway, Bhairahawa</span>
+      <span class="sep">·</span>
+      <span>☕ NEW: Himalayan Cold Brew — now available</span>
+      <span class="sep">·</span>
+      <span>🛵 Free delivery on orders above Rs. 500</span>
+    </div>
+  </div>
+
+  <!-- ======== SPLIT: SIGNATURE DRINK ======== -->
+  <section class="split-section">
+    <div class="split-visual split-left-visual">
+      <div class="split-img-wrap">
+        <div class="split-img-bg drink-bg-1">
+          <div class="drink-art drink-art-latte">
+            <svg viewBox="0 0 300 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="60" y="80" width="180" height="220" rx="20" fill="#2a1f12" stroke="#e8a23a" stroke-width="1.5"/>
+              <rect x="75" y="95" width="150" height="50" rx="8" fill="#3d2910"/>
+              <ellipse cx="150" cy="120" rx="72" ry="24" fill="#4a3015"/>
+              <path d="M118 115 C135 102 165 102 182 115 C165 128 135 128 118 115Z" fill="#c47c2a" opacity="0.7"/>
+              <path d="M133 112 C142 106 158 106 167 112" stroke="#d4882e" stroke-width="2" fill="none" opacity="0.7"/>
+              <path d="M240 160 C265 160 278 175 278 190 C278 205 265 215 240 215" stroke="#e8a23a" stroke-width="2.5" fill="none"/>
+              <text x="150" y="260" text-anchor="middle" fill="#e8a23a" font-family="Cormorant Garamond" font-size="18" font-style="italic">Velvet Latte</text>
+              <text x="150" y="282" text-anchor="middle" fill="#8a7560" font-family="Jost" font-size="12">Rs. 250</text>
+              <!-- steam lines -->
+              <path d="M130 75 C130 60 140 52 130 38" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+              <path d="M150 68 C150 53 160 45 150 31" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+              <path d="M170 75 C170 60 180 52 170 38" stroke="#e8a23a" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="split-img-tag">Signature Drink</div>
+      </div>
+    </div>
+    <div class="split-content">
+      <p class="eyebrow">Featured Specialty</p>
+      <h2>Crafted for the<br/><em>Night Owl in you.</em></h2>
+      <p>Our Velvet Latte is the soul of After Hours — silky steamed milk poured over a rich double-shot espresso base, finished with a hand-drawn rosette. Every sip is a reason to stay a little longer.</p>
+      <div class="product-detail-card">
+        <div class="pd-row">
+          <span>☕ Caffeine</span><strong>~150mg</strong>
+        </div>
+        <div class="pd-row">
+          <span>🥛 Options</span><strong>Oat · Almond · Full Cream</strong>
+        </div>
+        <div class="pd-row">
+          <span>🌡️ Temp</span><strong>Hot or Iced</strong>
+        </div>
+        <div class="pd-row price-row">
+          <span>Price</span><strong class="price">Rs. 250</strong>
+        </div>
+      </div>
+      <a href="order.html" class="btn btn-primary">Order This Drink →</a>
+    </div>
+  </section>
+
+  <!-- ======== MENU SHOWCASE ======== -->
+  <section class="menu-showcase">
+    <div class="showcase-header">
+      <div>
+        <p class="eyebrow">Our Menu</p>
+        <h2>Something for<br/><em>every hour.</em></h2>
+      </div>
+      <a href="menu.html" class="btn btn-outline">Full Menu →</a>
+    </div>
+
+    <div class="showcase-tabs" id="showcaseTabs">
+      <button class="tab-btn active" data-tab="coffee">☕ Coffee</button>
+      <button class="tab-btn" data-tab="cold">🧊 Cold Drinks</button>
+      <button class="tab-btn" data-tab="food">🍽️ Food</button>
+      <button class="tab-btn" data-tab="dessert">🍰 Desserts</button>
+    </div>
+
+    <div class="showcase-grid" id="showcaseGrid"></div>
+  </section>
+
+  <!-- ======== PARALLAX DIVIDER ======== -->
+  <div class="parallax-strip">
+    <div class="parallax-content">
+      <div class="pq-item"><span class="pq-num" data-count="20000">0</span><span class="pq-label">Cups Served</span></div>
+      <div class="pq-divider">|</div>
+      <div class="pq-item"><span class="pq-num" data-count="5">0</span><span class="pq-label">Years in Bhairahawa</span></div>
+      <div class="pq-divider">|</div>
+      <div class="pq-item"><span class="pq-num" data-count="23">0</span><span class="pq-label">Menu Items</span></div>
+      <div class="pq-divider">|</div>
+      <div class="pq-item"><span class="pq-num" data-count="500">0</span><span class="pq-label">Happy Reviews</span></div>
+    </div>
+  </div>
+
+  <!-- ======== SPLIT: STORY ======== -->
+  <section class="split-section split-reverse">
+    <div class="split-content">
+      <p class="eyebrow">Our Story</p>
+      <h2>Born in the lanes<br/><em>of Bhairahawa.</em></h2>
+      <p>After Hours Cafe started as a four-table corner shop on Siddartha Highway — a place for late-night conversations over strong coffee. Today, it's a beloved community landmark where locals, students, and travelers find warmth, great food, and even better company.</p>
+      <p>Every bean is sourced from Nepali hillside farms. Every pastry baked fresh each morning. Every cup pulled with obsessive precision.</p>
+      <a href="about.html" class="btn btn-outline">Read Our Story →</a>
+    </div>
+    <div class="split-visual split-right-visual">
+      <div class="split-img-wrap">
+        <div class="split-img-bg story-bg">
+          <div class="story-collage">
+            <div class="sc-card sc1">
+              <span>Est.</span>
+              <strong>2019</strong>
+            </div>
+            <div class="sc-card sc2">
+              <span>⭐</span>
+              <strong>4.9</strong>
+              <small>Google</small>
+            </div>
+            <div class="sc-card sc3">
+              <span>🌱</span>
+              <strong>Local Beans</strong>
+            </div>
+            <div class="sc-card sc4 sc-large">
+              <span class="sc-quote">"The best coffee stop between Butwal and Bhairahawa."</span>
+              <span class="sc-attr">— Rajan M., Traveler</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BEANS / PROCESS ======== -->
+  <section class="process-section">
+    <div class="process-header">
+      <p class="eyebrow">How We Brew</p>
+      <h2>From bean to cup,<br/><em>no shortcuts taken.</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-number">01</div>
+        <div class="ps-icon">🌱</div>
+        <h3>Sourced Locally</h3>
+        <p>Hill-grown single-origin beans from Nepali farms — traceable, fresh, and ethically traded.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-number">02</div>
+        <div class="ps-icon">🔥</div>
+        <h3>Roasted In-House</h3>
+        <p>Small-batch roasting in our Bhairahawa kitchen for peak aroma and flavor complexity.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-number">03</div>
+        <div class="ps-icon">⚗️</div>
+        <h3>Brewed with Care</h3>
+        <p>From 93°C pour-overs to pressure-calibrated espresso shots — science meets craft.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-number">04</div>
+        <div class="ps-icon">☕</div>
+        <h3>Served with Love</h3>
+        <p>Every cup leaves our hands at the perfect temperature with a smile and a story.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SPLIT: DELIVERY ======== -->
+  <section class="split-section delivery-split">
+    <div class="split-visual split-left-visual">
+      <div class="split-img-wrap">
+        <div class="split-img-bg delivery-bg">
+          <div class="delivery-art">
+            <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Map pin -->
+              <circle cx="160" cy="100" r="40" fill="#2a1f12" stroke="#e8a23a" stroke-width="2"/>
+              <circle cx="160" cy="100" r="18" fill="#e8a23a" opacity="0.9"/>
+              <path d="M160 140 L160 175" stroke="#e8a23a" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="160" cy="178" rx="20" ry="6" fill="#e8a23a" opacity="0.3"/>
+              <!-- Moped -->
+              <g transform="translate(80, 185)">
+                <circle cx="20" cy="45" r="18" stroke="#e8a23a" stroke-width="2" fill="none"/>
+                <circle cx="140" cy="45" r="18" stroke="#e8a23a" stroke-width="2" fill="none"/>
+                <path d="M38 45 L60 20 L110 20 L122 45" stroke="#e8a23a" stroke-width="2" fill="none"/>
+                <path d="M60 20 L50 5 L90 5 L100 20" stroke="#e8a23a" stroke-width="1.5" fill="none"/>
+                <rect x="85" y="3" width="25" height="16" rx="3" fill="#2a1f12" stroke="#c47c2a" stroke-width="1"/>
+                <text x="87" y="15" fill="#c47c2a" font-size="8" font-family="Jost">☕</text>
+              </g>
+              <!-- Dashed route -->
+              <path d="M160 178 C160 195 130 210 100 215 C80 218 70 220 65 225" stroke="#e8a23a" stroke-width="1.5" stroke-dasharray="6 4" fill="none" opacity="0.5"/>
+              <!-- Time badge -->
+              <rect x="200" y="50" width="90" height="44" rx="10" fill="#2a1f12" stroke="#e8a23a" stroke-width="1"/>
+              <text x="245" y="70" text-anchor="middle" fill="#e8a23a" font-family="Cormorant Garamond" font-size="16" font-weight="bold">25 min</text>
+              <text x="245" y="86" text-anchor="middle" fill="#8a7560" font-family="Jost" font-size="10">avg delivery</text>
+            </svg>
+          </div>
+        </div>
+        <div class="split-img-tag">Fast Delivery</div>
+      </div>
+    </div>
+    <div class="split-content">
+      <p class="eyebrow">Order & Delivery</p>
+      <h2>Fresh to your door<br/><em>in 25 minutes.</em></h2>
+      <p>Order online and our riders zip through Bhairahawa's streets to get your hot coffee and fresh bakes to you — still perfect, still warm.</p>
+      <div class="delivery-perks">
+        <div class="perk">
+          <span>🛵</span>
+          <div>
+            <strong>Fast Delivery</strong>
+            <p>25–40 minutes across Bhairahawa</p>
+          </div>
+        </div>
+        <div class="perk">
+          <span>💸</span>
+          <div>
+            <strong>Free Delivery</strong>
+            <p>On all orders above Rs. 500</p>
+          </div>
+        </div>
+        <div class="perk">
+          <span>📱</span>
+          <div>
+            <strong>Easy Payment</strong>
+            <p>eSewa · Khalti · Cash on Delivery</p>
+          </div>
+        </div>
+      </div>
+      <a href="order.html" class="btn btn-primary">Start Your Order →</a>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="testimonials-section">
+    <div class="test-header">
+      <p class="eyebrow">Reviews</p>
+      <h2>What our regulars say</h2>
+    </div>
+    <div class="testimonials-track" id="testimonialsTrack">
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"Best espresso I've had in Lumbini Zone. The vibe is unmatched — warm lights, great music, friendly staff. I come back every week."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">AS</div>
+          <div><strong>Aarav Shrestha</strong><span>Bhairahawa local</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"I come here every morning before work. Their cold brew is perfectly strong and smooth. Delivery is always fast and the packaging is gorgeous."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">PT</div>
+          <div><strong>Priya Tamang</strong><span>Daily regular</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"Stopped by while on my way to Lumbini. Absolutely stunning place. The mocha lava cake is unreal and the staff treated me like family."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">RM</div>
+          <div><strong>Rajan Mishra</strong><span>Lumbini traveler</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"After Hours is the only place in Bhairahawa where I can sit with my laptop until midnight and feel completely at home. The coffee is just a bonus."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">NK</div>
+          <div><strong>Neha KC</strong><span>Student, BIT College</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"The masala chai and momos combo is my go-to on rainy evenings. Cozy atmosphere, fast service, reasonable prices. Perfect café."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">BT</div>
+          <div><strong>Bikash Tharu</strong><span>Bhairahawa local</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="test-nav">
+      <button class="test-prev" id="testPrev">←</button>
+      <button class="test-next" id="testNext">→</button>
+    </div>
+  </section>
+
+  <!-- ======== BLOG / DRIP SECTION ======== -->
+  <section class="blog-section">
+    <div class="blog-header">
+      <div>
+        <p class="eyebrow">The Brew Journal</p>
+        <h2>Stories from our cup</h2>
+      </div>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card blog-card-featured">
+        <div class="blog-card-img bc-img-1">
+          <div class="blog-card-overlay">
+            <span class="blog-tag">Coffee Culture</span>
+            <h3>Why single-origin coffee is changing how Nepal drinks</h3>
+            <p>From the misty slopes of Ilam to the cups we pour in Bhairahawa — the story of Nepal's growing specialty coffee scene.</p>
+            <a href="#" class="blog-read">Read Story →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card-stack">
+        <div class="blog-card blog-card-small">
+          <div class="blog-card-img bc-img-2">
+            <div class="blog-card-overlay-sm">
+              <span class="blog-tag">Bhairahawa Life</span>
+              <h3>The midnight crowd: who stays till closing?</h3>
+              <a href="#" class="blog-read">Read →</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card blog-card-small">
+          <div class="blog-card-img bc-img-3">
+            <div class="blog-card-overlay-sm">
+              <span class="blog-tag">Recipes</span>
+              <h3>Make our cold brew at home: the After Hours method</h3>
+              <a href="#" class="blog-read">Read →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA BANNER ======== -->
+  <section class="cta-banner">
+    <div class="cta-bg-rings">
+      <div class="cta-ring r1"></div>
+      <div class="cta-ring r2"></div>
+    </div>
+    <div class="cta-content">
+      <p class="eyebrow" style="color:var(--amber-light)">Ready to order?</p>
+      <h2>Your next great cup is<br/><em>25 minutes away.</em></h2>
+      <p>Order online and we'll deliver fresh to your door across Bhairahawa.</p>
+      <div class="cta-actions">
+        <a href="order.html" class="btn btn-primary">Order Now</a>
+        <a href="contact.html" class="btn btn-ghost-light">Find Us →</a>
+      </div>
+      <div class="cta-address">
+        📍 Siddartha Highway, Bhairahawa · Open 6 AM – Midnight
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo">
+          <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
+            <path d="M8 28 C8 28 10 14 18 14 C26 14 28 28 28 28Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M28 20 C31 20 33 22 33 24 C33 26 31 27 28 27" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <ellipse cx="18" cy="28.5" rx="10" ry="1.5" stroke="currentColor" stroke-width="1" fill="none"/>
+          </svg>
+          After Hours<em>.</em>
+        </a>
+        <p>Bhairahawa's favourite late-night coffee destination. Specialty brews, artisan bakes, and warm community since 2019.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="menu.html">Coffee</a></li>
+            <li><a href="menu.html">Cold Drinks</a></li>
+            <li><a href="menu.html">Tea</a></li>
+            <li><a href="menu.html">Food</a></li>
+            <li><a href="menu.html">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <address>
+            Siddartha Highway<br/>
+            Near Butwal Bus Park<br/>
+            Bhairahawa (Siddharthanagar)<br/>
+            Rupandehi 32900, Nepal
+          </address>
+          <p class="footer-contact">📞 +977-71-XXXXXX</p>
+          <p class="footer-contact">📧 hello@afterhourscafe.np</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon – Fri<br/><strong>6:00 AM – 12:00 AM</strong></p>
+          <p>Sat – Sun<br/><strong>7:00 AM – 1:00 AM</strong></p>
+          <p class="footer-delivery-note">🛵 Delivery available<br/>during all open hours</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 After Hours Cafe, Bhairahawa, Nepal. All rights reserved.</p>
+      <p>Built with ☕ and love for the people of Bhairahawa.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
