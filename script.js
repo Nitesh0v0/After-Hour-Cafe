@@ -30,10 +30,9 @@ const products = [
 ];
 
 let cartCount = 0;
-const cartDisplay = document.getElementById('cart-count');
-const grid = document.getElementById('product-grid');
 
 function renderStore() {
+    const grid = document.getElementById('product-grid');
     grid.innerHTML = products.map(item => `
         <div class="product-card">
             <img src="${item.image}" alt="${item.name}" class="product-image">
@@ -47,11 +46,7 @@ function renderStore() {
 
 function addToCart() {
     cartCount++;
-    cartDisplay.innerText = cartCount;
-    
-    // Quick visual feedback
-    cartDisplay.style.color = "#d4af37";
-    setTimeout(() => cartDisplay.style.color = "#fff", 300);
+    document.getElementById('cart-count').innerText = cartCount;
 }
 
 document.addEventListener('DOMContentLoaded', renderStore);
