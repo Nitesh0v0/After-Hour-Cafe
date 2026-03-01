@@ -1,31 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After Hours Café | Late Night Brews</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After Hours Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <div class="logo">After Hours Café</div>
-        <div class="cart-status">Orders: <span id="cart-count">0</span></div>
-    </nav>
 
-    <header>
-        <div class="hero-content">
-            <h1>Moonlight in every cup.</h1>
-            <p>Open until 4:00 AM for the night owls and dreamers.</p>
-        </div>
-    </header>
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-    <main id="product-grid" class="container">
-        </main>
+  <!-- Toast -->
+  <div id="toast"></div>
 
-    <footer>
-        <p>&copy; 2026 After Hours Café</p>
-    </footer>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-logo">After <span>Hours</span> Café</div>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#about">Hours</a></li>
+    </ul>
+    <button class="nav-cart" onclick="toggleCart()">
+      Bag
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </nav>
 
-    <script src="script.js"></script>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <p class="hero-tag">Open 10pm – 4am · Est. 2019</p>
+    <h1 class="hero-title">
+      Where the Night<br>
+      <em>Finds its Flavor</em>
+    </h1>
+    <p class="hero-sub">
+      Specialty coffee, midnight pastries, and a darkness that tastes like home.
+      Order ahead or walk in when the world goes quiet.
+    </p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+        Explore Menu
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        Our Story
+      </button>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Menu / Shop -->
+  <section id="menu">
+    <div class="menu-header reveal">
+      <div>
+        <p class="section-label">Our Offerings</p>
+        <h2 class="section-title">The Night's <em>Menu</em></h2>
+      </div>
+      <div class="menu-filters">
+        <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProducts('drinks', this)">Drinks</button>
+        <button class="filter-btn" onclick="filterProducts('food', this)">Food</button>
+        <button class="filter-btn" onclick="filterProducts('merch', this)">Merch</button>
+      </div>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-visual reveal">
+      <img
+        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80"
+        alt="After Hours Café interior"
+        style="width:100%;height:100%;object-fit:cover;display:block;"
+      />
+      <div class="about-accent"></div>
+    </div>
+    <div class="about-content reveal">
+      <p class="section-label">Who We Are</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem">
+        Born from<br><em>Sleepless Nights</em>
+      </h2>
+      <p>
+        After Hours Café began as an experiment — a single espresso machine, a corner booth,
+        and the belief that the best conversations happen when the rest of the world is asleep.
+      </p>
+      <p>
+        Every drink we serve is a deliberate act. Cold brews steeped for 24 hours. Single-origin
+        espressos pulled to the second. Pastries baked fresh at midnight, gone by 2am.
+      </p>
+      <p>
+        We don't do loyalty cards or happy hours. We do late nights, good music, and coffee
+        worth staying up for.
+      </p>
+      <div class="hours-grid">
+        <div class="hours-item"><span>Mon – Thu</span><span>10pm – 3am</span></div>
+        <div class="hours-item"><span>Friday</span><span>10pm – 4am</span></div>
+        <div class="hours-item"><span>Saturday</span><span>9pm – 4am</span></div>
+        <div class="hours-item"><span>Sunday</span><span>9pm – 2am</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section id="quote">
+    <div class="quote-mark reveal">"</div>
+    <blockquote class="reveal">
+      The night holds a different kind of clarity. After Hours gives it a name.
+    </blockquote>
+    <cite class="reveal">— Noma, Regular since 2020</cite>
+  </section>
+
+  <!-- Cart Panel -->
+  <div id="cart-overlay" onclick="toggleCart()"></div>
+  <aside id="cart-panel">
+    <div class="cart-header">
+      <h2>Your Bag</h2>
+      <button class="close-cart" onclick="toggleCart()">✕</button>
+    </div>
+    <div id="cart-items">
+      <div class="cart-empty" id="cart-empty">
+        <div class="cart-empty-icon">☾</div>
+        <p>Your bag is empty.<br>The night is young.</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total">Rs. 0</span>
+      </div>
+      <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">After <span>Hours</span> Café</div>
+        <p>Open when the world goes quiet. A place for night owls, artists, and anyone who thinks the best ideas come after midnight.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Hours</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Spotify Playlist</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <ul>
+          <li><a href="#">12 Dusk Lane</a></li>
+          <li><a href="#">The Arts Quarter</a></li>
+          <li><a href="#">+1 (555) 240-0000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 After Hours Café. All rights reserved.</span>
+      <span>Brewed in the dark ☽</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
